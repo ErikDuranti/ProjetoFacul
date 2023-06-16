@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Container = Definindo o tamanho da tela que o site vai ocupar */
+#container {
+    width: 1920px;
+    height: 4320px;
+}
+/* Dando inicio na Navbar de cima, onde coloco a logo e os botões de login e registro */
+.topnav {
+    position: absolute;
+    overflow: hidden;
+    width: 1920px;
+    height: 124px;
+    left: 0px;
+    top: 0px;
+    
+    background: #262626;
+}
+
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    height: 32px;
+    width: 500px;
+    left: 1320px;
+    top: 40px;
+    margin-right: 100px;
+    margin-top: 42px;
+    border: 2px solid #262626;    
+    border-radius: 30px;
+}
+
+#logo {
+    position: absolute;
+    width: 102px;
+    height: 73px;
+    left: 902px;
+    top: 24px;
+    
+}
+
+#login{
+    position: absolute;
+    width: 99px;
+    height: 44px;
+    left: 100px;
+    top: 40px;
+    
+    background: #F2F2F2;
+    border-radius: 20px;
+    border: 2px solid #898989;
+}
+#register{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 126px;
+    height: 44px;
+    left: 227px;
+    top: 40px;
+    
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+}
+
+#register:hover{
+    background-color: blue;
+}
+#login:hover{
+    background-color: blue;
+}
+
+#search{
+    position: absolute;
+    left: 92%;
+    right: 10%;
+    top: 43%;
+    bottom: 98.5%;
+    height: 24px;
+}
+
+#head1 {
+    width: 1920px;
+    height: 150px;
+    background-color: #256315;
+}
+
+.botnav{
+    position: absolute;
+    width: 1000px;
+    height: 59px;
+    left: 460px;
+    top: 124px;
+    
+    background: #9DA657;
+    border-radius: 0px 0px 20px 20px;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.menu-topo ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 85px;
+    margin-top: 11px;
+    font-size: 24px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.menu-topo ul li a:link,
+.menu-topo ul li a:visited{
+    color: #262626;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
