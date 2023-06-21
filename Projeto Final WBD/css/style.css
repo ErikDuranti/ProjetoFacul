@@ -3,10 +3,10 @@
     margin: 0;
 }
 /* Container = Definindo o tamanho da tela que o site vai ocupar */
-#container {
+/* #container {
     width: 1920px;
     height: 4320px;
-}
+} */
 /* Dando inicio na Navbar de cima, onde coloco a logo e os botões de login e registro */
 .topnav {
     position: absolute;
@@ -120,3 +120,249 @@ li {
     font-weight: bold;
     text-transform: uppercase;
 }
+
+.menu-topo ul li a:active{
+    color: #256315;
+}
+
+.retangulo{
+    position: absolute;
+    width: 600px;
+    height: 70px;
+    left: 660px;
+    top: 341px;
+
+    background: #9FBF30;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.retangulo h2{
+    position: absolute;
+    width: 426px;
+    height: 36px;
+    left: 100px;
+    top: 20px;
+    
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+    color: #F2F2F2;
+}
+
+.slider{
+    width: 880px;
+    height: 495.35px;
+    position: relative;
+    display: block;
+    border: 2px solid #262626
+    ;
+    left: 520px;
+    top: 411px;
+}
+
+.slider-item{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+}
+
+.flecha {
+    border: solid #262626;    ;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.flecha-voltar{
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.flecha-avanco{
+    right: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+[id^= "item"]{
+    display: none;
+}
+
+.item-1{
+    z-index: 2;
+    opacity: 1;
+    background: url('/img/slide1.jpg');
+    background-size: cover;
+}
+
+.item-2{
+    background: url('/img/slide2.jpg');
+    background-size: cover;
+}
+
+.item-3{
+    background: url('/img/slide3.jpg');
+    background-size: cover;
+}
+
+*:target ~ .item-1{
+    opacity: 0;
+}
+
+#item-1:target ~ .item-1{
+    opacity: 1;
+}
+
+#item-2:target ~ .item-2, 
+#item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+}
+
+
+
+.noticia h2{
+    position: absolute;
+    width: 210px;
+    height: 72px;
+    left: 100px;
+    top: 1128px;
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    color: #9DA657;      
+}
+
+.noticia hr{
+    position: absolute;
+    width: 1482px;
+    height: 0px;
+    left: 100px;
+    top: 1200px;
+    border: 3px solid #9DA657;
+}
+
+.noticia h3{
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    /* identical to box height */ 
+    color: #9DA657;    
+}
+
+.noticia1 h3{
+    position: absolute;
+    width: 98px;
+    height: 48px;
+    left: 109px;
+    top: 1331px;
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #9DA657;
+}
+
+.noticia1 img{
+    position: absolute;
+    width: 480px;
+    height: 300px;
+    left: 109px;
+    top: 1385px;
+}
+
+.noticia1 #main-text {
+    position: absolute;
+    width: 324px;
+    height: 78px;
+    left: 600px;
+    top: 1385px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #262626;    
+}
+
+.noticia1 #second-text {
+    position: absolute;
+    width: 338px;
+    height: 94px;
+    left: 600px;
+    top: 1533px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: #262626;
+}
+
+.noticia2 h3{
+    position: absolute;
+    width: 98px;
+    height: 48px;
+    left: 962px;
+    top: 1331px;
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px; 
+    color: #9DA657;
+}
+
+.noticia2 img{
+    position: absolute;
+    width: 480px;
+    height: 300px;
+    left: 962px;
+    top: 1385px;
+    border-radius: 10px;
+}
+
+.noticia2 #main-text {
+    position: absolute;
+    width: 371px;
+    height: 103px;
+    left: 1453px;
+    top: 1385px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #262626;    
+}
+
+.noticia2 #second-text {
+    position: absolute;
+    width: 360px;
+    height: 150px;
+    left: 1453px;
+    top: 1533px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: #262626;
+}
+
