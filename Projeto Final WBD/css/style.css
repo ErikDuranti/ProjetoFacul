@@ -11,7 +11,7 @@
 .topnav {
     position: absolute;
     overflow: hidden;
-    width: 1920px;
+    width: 1864px;
     height: 124px;
     left: 0px;
     top: 0px;
@@ -54,13 +54,11 @@
 }
 #register{
     box-sizing: border-box;
-
     position: absolute;
     width: 126px;
     height: 44px;
     left: 227px;
     top: 40px;
-    
     border: 2px solid #F2F2F2;
     border-radius: 20px;
 }
@@ -92,10 +90,10 @@
     width: 1000px;
     height: 59px;
     left: 460px;
-    top: 124px;
-    
+    top: 125.5px;    
     background: #9DA657;
     border-radius: 0px 0px 20px 20px;
+    z-index: 1000;
 }
 
 li {
@@ -130,10 +128,10 @@ li {
     width: 600px;
     height: 70px;
     left: 660px;
-    top: 341px;
-
+    top: 814px;
+    
     background: #9FBF30;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 0px 0px 20px 20px;
 }
 
 .retangulo h2{
@@ -152,15 +150,16 @@ li {
     color: #F2F2F2;
 }
 
+/* Video utilizado para fazer o slider https://www.youtube.com/watch?v=F33_O-lcx20  */
+
 .slider{
-    width: 880px;
-    height: 495.35px;
+    width: 1860px;
+    height: 690px;
     position: relative;
     display: block;
-    border: 2px solid #262626
-    ;
-    left: 520px;
-    top: 411px;
+    border: 2px solid #262626;
+    top: 124px;
+    z-index: 1;
 }
 
 .slider-item{
@@ -175,7 +174,7 @@ li {
 }
 
 .flecha {
-    border: solid #262626;    ;
+    border: solid red;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 12px;
@@ -230,14 +229,15 @@ li {
     opacity: 1;
 }
 
-
+/* Set das caracteristicas das tags dentro das noticias, para não precisar dizer o tamanho das letras
+todas as vezes, fiz apenas uma vez para todas e separei as posições abaixo */
 
 .noticia h2{
     position: absolute;
     width: 210px;
     height: 72px;
-    left: 100px;
-    top: 1128px;
+    left: 126px;
+    top: 944px;
     font-family: 'Kanit';
     font-style: normal;
     font-weight: 700;
@@ -248,121 +248,389 @@ li {
 
 .noticia hr{
     position: absolute;
-    width: 1482px;
+    width: 1642px;
     height: 0px;
-    left: 100px;
-    top: 1200px;
+    left: 117px;
+    top: 1022px;
     border: 3px solid #9DA657;
 }
 
 .noticia h3{
+    position: absolute;
     font-family: 'Kanit';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
-    line-height: 48px;
-    /* identical to box height */ 
-    color: #9DA657;    
+    line-height: 48px;  
+    color: #9DA657;
 }
 
-.noticia1 h3{
+.noticia h5 {
     position: absolute;
-    width: 98px;
-    height: 48px;
-    left: 109px;
-    top: 1331px;
-    font-family: 'Kanit';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
-    line-height: 48px;
-    color: #9DA657;
+    line-height: 39px;
+    color: #262626;
+}
+
+.noticia p{
+    position: absolute;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: #262626;
+}
+
+/* Primeira Noticia */
+.noticia1 h3{
+    width: 98px;
+    height: 48px;
+    left: 126px;
+    top: 1082px;
 }
 
 .noticia1 img{
     position: absolute;
     width: 480px;
     height: 300px;
-    left: 109px;
-    top: 1385px;
+    left: 126px;
+    top: 1136px;    
+    border-radius: 10px;
 }
 
-.noticia1 #main-text {
-    position: absolute;
+.noticia1 h5{
     width: 324px;
     height: 78px;
-    left: 600px;
-    top: 1385px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 39px;
-    color: #262626;    
+    left: 617px;
+    top: 1136px;
 }
 
-.noticia1 #second-text {
-    position: absolute;
+.noticia1 p{
     width: 338px;
     height: 94px;
-    left: 600px;
-    top: 1533px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 39px;
-    color: #262626;
+    left: 613px;
+    top: 1299px;
 }
 
+/* Segunda Noticia */
 .noticia2 h3{
-    position: absolute;
     width: 98px;
     height: 48px;
-    left: 962px;
-    top: 1331px;
-    font-family: 'Kanit';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 48px; 
-    color: #9DA657;
+    left: 941px;
+    top: 1082px;
 }
 
 .noticia2 img{
     position: absolute;
-    width: 480px;
+    width: 483.22px;
     height: 300px;
-    left: 962px;
-    top: 1385px;
+    left: 941px;
+    top: 1136px;  
     border-radius: 10px;
 }
 
-.noticia2 #main-text {
-    position: absolute;
-    width: 371px;
-    height: 103px;
-    left: 1453px;
-    top: 1385px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 39px;
-    color: #262626;    
+.noticia2 h5{
+    width: 324px;
+    height: 78px;
+    left: 1435px;
+    top: 1136px;
 }
 
-.noticia2 #second-text {
+.noticia2 p{
+    width: 338px;
+    height: 94px;
+    left: 1435px;
+    top: 1299px;
+}
+
+/* Quarta Noticia */
+.noticia3 h3{
+    width: 100px;
+    height: 48px;
+    left: 126px;
+    top: 1459px;
+}
+
+.noticia3 img{
     position: absolute;
-    width: 360px;
-    height: 150px;
-    left: 1453px;
-    top: 1533px;
-    font-family: 'Montserrat';
+    width: 483.22px;
+    height: 300px;
+    left: 126px;
+    top: 1530px; 
+    border-radius: 10px; 
+}
+
+.noticia3 h5{
+    width: 324px;
+    height: 78px;
+    left: 617px;
+    top: 1530px;    
+}
+
+.noticia3 p{
+    width: 338px;
+    height: 94px;
+    left: 617px;
+    top: 1700px;
+}
+
+/* Quinta Noticia */
+.noticia4 h3{
+    width: 100px;
+    height: 48px;
+    left: 941px;
+    top: 1459px;
+}
+
+.noticia4 img{
+    position: absolute;
+    width: 483.22px;
+    height: 300px;
+    left: 941px;
+    top: 1530px;  
+    border-radius: 10px;  
+}
+
+.noticia4 h5{
+    width: 324px;
+    height: 78px;
+    left: 1437px;
+    top: 1530px;
+}
+
+.noticia4 p{
+    width: 338px;
+    height: 94px;
+    left: 1437px;
+    top: 1700px;
+}
+
+/* Quinta Noticia  */
+.noticia5 h3{
+    width: 136px;
+    height: 48px;
+    left: 126px;
+    top: 1853px;
+}
+
+.noticia5 img{
+    position: absolute;
+    width: 483.22px;
+    height: 300px;
+    left: 126px;
+    top: 1924px;
+    border-radius: 10px;   
+}
+
+.noticia5 h5{
+    width: 324px;
+    height: 78px;
+    left: 617px;
+    top: 1924px;
+}
+
+.noticia5 p{
+    width: 338px;
+    height: 94px;
+    left: 617px;
+    top: 2094px;
+}
+/* Sexta Noticia */
+.noticia6 h3{
+    width: 136px;
+    height: 48px;
+    left: 941px;
+    top: 1853px;
+}
+
+.noticia6 img{
+    position: absolute;
+    width: 483.22px;
+    height: 300px;
+    left: 941px;
+    top: 1924px;  
+    border-radius: 10px;      
+}
+
+.noticia6 h5{
+    width: 324px;
+    height: 78px;
+    left: 1437px;
+    top: 1924px;
+}
+
+.noticia6 p{
+    width: 338px;
+    height: 94px;
+    left: 1437px;
+    top: 2094px;
+}
+
+/* Sétima Noticia  */
+.noticia7 h3{
+    width: 114px;
+    height: 48px;
+    left: 126px;
+    top: 2247px;
+}
+
+.noticia7 img{
+    position: absolute;
+    width: 483.22px;
+    height: 300px;
+    left: 126px;
+    top: 2318px;    
+    border-radius: 10px;
+}
+
+.noticia7 h5{
+    width: 324px;
+    height: 78px;
+    left: 617px;
+    top: 2318px;
+}
+
+.noticia7 p{
+    width: 338px;
+    height: 94px;
+    left: 617px;
+    top: 2488px;
+}
+
+/* Oitava Noticia */
+.noticia8 h3{
+    width: 114px;
+    height: 48px;
+    left: 941px;
+    top: 2247px;
+}
+
+.noticia8 img{
+    position: absolute;
+    width: 483.22px;
+    height: 300px;
+    left: 941px;
+    top: 2318px; 
+    border-radius: 10px; 
+}
+
+.noticia8 h5{
+    width: 324px;
+    height: 78px;
+    left: 1437px;
+    top: 2318px;
+}
+
+.noticia8 p{
+    width: 338px;
+    height: 94px;
+    left: 1437px;
+    top: 2488px;
+}
+
+.background {
+    position: absolute;
+    width: 1309px;
+    height: 1002px;
+    left: -11px;
+    top: 2725px;
+}
+
+.botpage div h5{
+    position: absolute;
+    width: 356px;
+    height: 35px;
+    left: 1111px;
+    top: 3029px;
+    
+    font-family: 'Kanit';
     font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 39px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    
     color: #262626;
 }
 
+.botpage div p{
+    position: absolute;
+    width: 437px;
+    height: 24px;
+    left: 1155px;
+    top: 3398px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #262626;
+}
+
+.mapa {
+    overflow:hidden;
+    padding-bottom:56.25%;
+}
+
+.mapa iframe{
+    left: 1146px;
+    top: 3077px;
+    position:absolute;
+}
+
+.rodape div{
+    position: absolute;
+    width: 1864px;
+    height: 190px;
+    left: 0px;
+    top: 3799px;
+    background: #262626;
+}
+
+.rodape h5{
+    position: absolute;
+    width: 230px;
+    height: 35px;
+    left: 869px;
+    top: 20px;
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #F2F2F2;
+}
+
+#youtube {
+    position: absolute;
+    width: 64px;
+    height: 51.2px;
+    top: 75.8px;
+    left: 807px;
+}
+#instagram {
+    position: absolute;
+    width: 64px;
+    height: 51.2px;
+    top: 75.8px;;
+    left: 906px;
+}
+#whatsapp {
+    position: absolute;
+    width: 64px;
+    height: 51.2px;
+    top: 75.8px;;
+    left: 1003px;
+}
+#facebook {
+    position: absolute;
+    width: 64px;
+    height: 51.2px;
+    top: 75.8px;;
+    left: 1100px;
+}
